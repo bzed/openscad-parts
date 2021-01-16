@@ -1,7 +1,8 @@
-/*
-Copyright © 2018 Bernd Zeimetz <bernd@bzed.de>
-License: Creative Commons Attribution-ShareAlike 4.0 International
+/*  
+    This work is dual licensed under the GPL 3.0 and the GNU Lesser General Public License as per http://creativecommons.org/licenses/LGPL/2.1/
+    Copyright (C) 2018, 2020 Bernd Zeimetz <bernd@bzed.de>
 */
+
 
 /*
 bearing configuration. 26/10/8 is a standard 6000 bearing
