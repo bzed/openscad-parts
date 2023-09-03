@@ -44,11 +44,11 @@ display_pcb_y = 10;
 display_x = 13;
 display_y = 6.5;
 
-wireless_stick_lite = true;
+wireless_stick_lite = false;
 
 show_base = true;
-show_mid = false;
-show_top = false;
+show_mid = true;
+show_top = true;
 show_button = false;
 
 // ================================================================================ //
