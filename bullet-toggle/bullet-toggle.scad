@@ -1,5 +1,13 @@
-// customizable bullet toggle
 
+/*
+
+Copyright (c) 2023 Bernd Zeimetz
+
+LICENSE:
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
+
+ customizable bullet toggle
+*/
 
 diameter_middle = 10.15;
 diameter_side = 6;
