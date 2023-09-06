@@ -1,3 +1,14 @@
+/*
+
+Copyright (c) 2023 Bernd Zeimetz
+
+LICENSE:
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
+
+ adxl345 mount for EVA2
+*/
+
+
 $fan_size = 40;
 $screw_distance = 32;
 $adxl_screw_distance = 15;
