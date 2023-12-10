@@ -6,6 +6,7 @@ LICENSE:
     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
     
 Wet Stone Sharpening Guides
+    https://github.com/bzed/openscad-parts/tree/main/wet_stone_angle_guide
 
 Requires the awesome Round-Anything library
         https://github.com/Irev-Dev/Round-Anything
