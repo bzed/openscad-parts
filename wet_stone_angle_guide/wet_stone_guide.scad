@@ -12,16 +12,16 @@ Requires the awesome Round-Anything library
         https://github.com/Irev-Dev/Round-Anything
 */
 
-width = 35;
-length = 50;
+width = 30;
+length = 35;
 angles = [ 10, 12, 15, 17, 20, 25, 30 ];
-
+text_depth = 0.4;
 
 include <Round-Anything/polyround.scad>
 
 $fn = $preview ? 16 : 128;
 
-module guide(angle, length, width) {
+module guide(angle, length, width, text_depth) {
     alpha = angle;
     
     rad = 0.5;
@@ -45,17 +45,18 @@ module guide(angle, length, width) {
     C = [ c1, h, 2*rad ];
 
 
+    coutout_d = length/8;
     
     difference() {
         linear_extrude(width) difference() {
             polygon(polyRound([A,B,C], fn=32));
-            translate([c/6,(c/6)/2/3]) circle(d = c/6);
+            translate([coutout_d * 1.5,(coutout_d)/2/3]) circle(d = coutout_d);
         }
 
-        translate([ length /2 + length/12, 1, width /2]) rotate([90,0,0]) linear_extrude(2) text(str(angle), size = min(length/3, width/2), halign = "center", valign="center");
+        translate([ length /2 + length/12, text_depth, width /2]) rotate([90,0,0]) linear_extrude(1 + text_depth) text(str(angle), size = min(length/3, width/2), halign = "center", valign="center");
     }
 
 }
 rotate([90,0,0]) for (a = [ 0 : len(angles) - 1 ]) {
-    translate([0,0, a*(width + 5)]) guide(angles[a], length, width);
+    translate([0,0, a*(width + 5)]) guide(angles[a], length, width, text_depth);
 }
