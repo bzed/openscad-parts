@@ -55,6 +55,6 @@ module guide(angle, length, width) {
     }
 
 }
-for (a = [ 0 : len(angles) - 1 ]) {
+rotate([90,0,0]) for (a = [ 0 : len(angles) - 1 ]) {
     translate([0,0, a*(width + 5)]) guide(angles[a], length, width);
 }
