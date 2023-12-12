@@ -5,21 +5,27 @@ Copyright (c) 2023 Bernd Zeimetz
 LICENSE:
     Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
     
-Wet Stone Sharpening Guides
-    https://github.com/bzed/openscad-parts/tree/main/wet_stone_angle_guide
+Whetstone Sharpening Guides
+    https://github.com/bzed/openscad-parts/tree/main/whetstone_sharpening_angle_guide
 
 Requires the awesome Round-Anything library
         https://github.com/Irev-Dev/Round-Anything
 */
 
-width = 30;
-length = 35;
-angles = [ 10, 12, 15, 17, 20, 25, 30 ];
-text_depth = 0.4;
+
+/* [Guides] */
+
+width = 35; // [20:1:100]
+length = 40; // [20:1:100]
+angles = [ 10, 12, 15, 17, 20, 25, 30 ]; // [ 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35 ]
+text_depth = 0.4; // [0.1:0.1:2]
+
+/* [Hidden] */
+$fn = $preview ? 16 : 128;
 
 include <Round-Anything/polyround.scad>
 
-$fn = $preview ? 16 : 128;
+
 
 module guide(angle, length, width, text_depth) {
     alpha = angle;
