@@ -1,3 +1,14 @@
+/*
+
+Copyright (c) 2023 Bernd Zeimetz
+
+LICENSE:
+    Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International Public License
+
+ customizable bullet toggle
+*/
+
+
 machine_foot_width = 12.7;
 machine_foot_height = 1.75;
 rope_diameter = 0.6;
